@@ -1,0 +1,20 @@
+<table>
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>email</th>
+			<th>password</th>
+			<th>password_confirmation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |users| %>
+		<tr>
+			<td><%= users.name %></td>
+			<td><%= users.email %></td>
+			<td><%= users.password %></td>
+			<td><%= users.password_confirmation %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
